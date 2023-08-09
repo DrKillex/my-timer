@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Timer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container text-center pt-3">
+            <h1 class="text-white">My Timer</h1>
+            <h5 class="mt-5">Con imposta data puoi controllare quanto manca a quel giorno, con salva data puoi tenere in memoria la data selezionata</h3>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row pt-5 justify-content-center gap-1">
+                <div class="col-1 text-center">
+                    <div id="days">00</div>
+                    <div>giorni</div>
+                </div>
+                <div class="col-1 text-center">
+                    <div id="hours">00</div>
+                    <div>ore</div>
+                </div>
+                <div class="col-1 text-center">
+                    <div id="minutes">00</div>
+                    <div>minuti</div>
+                </div>
+                <div class="col-1 text-center">
+                    <div id="seconds">00</div>
+                    <div>secondi</div>
+                </div>
+                <div class="col-12 d-flex justify-content-center gap-3 mt-5">
+                    <input type="date" name="date" id="date">
+                    <button id="submit" class="btn btn-primary">imposta data</button>
+                    <button id="save" class="btn btn-success">salva data</button>
+                    <button id="remove" class="btn btn-warning">rimuovi data</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container mt-5">
+        <div class="row">
+            <h6 class="text-center col-12 mb-3">Partito da un esercizio Boolean con un semplice timer di una data precisa ho deciso di creare un app che funzioni per qualsiasi data e ti dica quanto manca a quel giorno entro l'anno prossimo, in più puoi salvare la data in modo che se ricarichi la pagina non perdi la data.</h6>
+            <div class="col-6">
+                <a href="https://www.linkedin.com/in/luca-collaro/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/DrKillex"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="text-end text-white col-6 me-medesimo">made with ❤ by DrKillex-Luca Collaro</div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

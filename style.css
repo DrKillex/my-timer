@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(146, 38, 56);
+}
+.text-center {
+    color: white;
+}
+#date {
+    border-radius: 10px;
+    border-color: blue;
+    background-color: aquamarine;
+}
+.col-1 {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+i {
+    font-size: 25px;
+    color: lightgray;
+    margin-right: .625rem;
+}
+.me-medesimo {
+    font-size: .75rem;
+}
