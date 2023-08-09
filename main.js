@@ -43,8 +43,8 @@ let selectedDate='';
 // auto timer se salvato
 if(localStorage.getItem('myTimer')!==null){
     selectedDate = new Date(localStorage.getItem('myTimer'))
-    console.log(localStorage.getItem('myTimer'))
     const tick = setInterval(timer, 1000)
+    document.getElementById('date').value = selectedDate.toISOString().split('T')[0];
 };
 
 // eventi dei bottoni
@@ -68,4 +68,5 @@ remove.addEventListener('click', function(){
     displayMinutes.innerHTML = '00'
     displaySeconds.innerHTML = '00'
     stopTimer = true
+    document.getElementById('date').value = null;
 })
