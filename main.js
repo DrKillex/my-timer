@@ -49,11 +49,13 @@ if(localStorage.getItem('myTimer')!==null){
 
 // eventi dei bottoni
 submit.addEventListener('click', function(){
+    stopTimer = false
     const dateValue = submitDate.value
     selectedDate = new Date(dateValue)
     const tick = setInterval(timer, 1000)
 })
 save.addEventListener('click', function(){
+    stopTimer = false
     const dateValue = submitDate.value
     selectedDate = new Date(dateValue)
     localStorage.setItem('myTimer', selectedDate);
